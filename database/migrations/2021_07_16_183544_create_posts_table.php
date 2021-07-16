@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('sub_title');
             $table->text('content');
+            $table->integer('visitors')->default(0);
             $table->timestamps();
         });
     }
