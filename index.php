@@ -18,12 +18,4 @@ if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
     return false;
 }
 
-function ddd($x)
-{
-    $origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
-    header("Access-Control-Allow-Origin: $origin");
-    header('Access-Control-Allow-Credentials: true');
-    dd($x);
-}
-
 require_once __DIR__ . '/public/index.php';
