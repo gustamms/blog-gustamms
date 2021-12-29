@@ -4,6 +4,6 @@
         "color": "EEEEEE"
     },
     "CHECKS": {
-        "regexp": "/^(Added|Changed|Deprecated|Removed|Fixed|Security)\\:\\s\\[([A-Z0-9]+)\\-([0-9]+)\\]\\s(.*)|(Release)\\/([0-9]*\\.?[0-9]*\\.?[0-9]*)$/"
+        "regexp": "/^(Added|Changed|Deprecated|Removed|Fixed|Security)\:\s\[([A-Z0-9]+)\-([0-9]+)\]\s(.*)|(Release)\/([0-9]*\.?[0-9]*\.?[0-9]*)$/"
     }
 }
