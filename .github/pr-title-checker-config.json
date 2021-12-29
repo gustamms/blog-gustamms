@@ -1,6 +1,6 @@
 {
     "LABEL": {
-        "name": "Por favor, forneça o título da PR conforme o padrão",
+        "name": "forneça o título da PR conforme o padrão",
         "color": "EEEEEE"
     },
     "CHECKS": {
