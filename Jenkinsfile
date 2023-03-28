@@ -7,5 +7,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+
+        stage('git clone') {
+            steps {
+                git clone "ssh://git@github.com:gustamms/blog-gustamms.git"
+            }
+        }
     }
 }
