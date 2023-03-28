@@ -2,6 +2,14 @@ pipeline {
     agent any
 
     stages {
+        stage('Build') {
+            steps {
+                git 'https://github.com/gustamms/blog-gustamms.git'
+                sh 'composer install'
+                sh 'php artisan key:generate'
+            }
+        }
+
         stage('Unit Tests') {
             steps {
                 sh 'vendor/bin/phpunit'
