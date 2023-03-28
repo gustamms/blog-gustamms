@@ -10,8 +10,9 @@ pipeline {
 
         stage('git clone') {
             steps {
-                withSonarQubeEnv(installationName: 'poc-jenkins')
-                git clone "ssh://git@github.com:gustamms/blog-gustamms.git"
+                withSonarQubeEnv(installationName: 'poc-jenkins') {
+                    git clone "ssh://git@github.com:gustamms/blog-gustamms.git"
+                }
             }
         }
     }
