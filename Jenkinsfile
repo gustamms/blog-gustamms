@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('HelloWorld') {
             steps {
-                withSonarQubeEnv(installationName: 'poc-jenkins') {
+                withSonarQubeEnv(installationName: 'poc') {
                     echo 'Hello World'
                 }
             }
