@@ -1,7 +1,5 @@
 grumphp:
     tasks:
-        phpcs:
-            standard: ['PSR12']
         phpmd:
             whitelist_patterns: []
             exclude: ['database']
@@ -11,7 +9,7 @@ grumphp:
         phpmnd:
             directory: .
             whitelist_patterns: []
-            exclude: []
+            exclude: ['vendor']
             exclude_name: []
             exclude_path: []
             extensions: []
@@ -21,4 +19,4 @@ grumphp:
             ignore_strings: []
             strings: false
             triggered_by: ['php']
-            
+
