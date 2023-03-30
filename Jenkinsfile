@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('HelloWorld') {
+        stage('Composer install') {
             steps {
                 sh 'composer install'
+            }
+        }
+        stage('GrumPHP verify') {
+            steps {
+                sh './vendor/bin/grumphp run'
             }
         }
     }
