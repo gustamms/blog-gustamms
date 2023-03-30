@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('HelloWorld') {
             steps {
-                withSonarQubeEnv(installationName: 'poc') {
-                    sh 'composer install'
-                }
+                sh 'composer install'
             }
         }
     }
