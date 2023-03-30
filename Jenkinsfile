@@ -7,9 +7,9 @@ pipeline {
                 sh 'composer install'
             }
         }
-        stage('GrumPHP verify') {
+        stage('Unit tests') {
             steps {
-                sh './vendor/bin/grumphp run'
+                sh './vendor/bin/phpunit'
             }
         }
     }
